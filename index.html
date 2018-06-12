@@ -10,23 +10,52 @@
 			margin:0px;
 			padding:0px;
 			height:100%;
+			background: #4BBBF3;
 		}
 
-		.responsive {
-		    width: 100%;
-		    height: auto;
+		@media only screen and (max-width: 500px) {
+				.logo {
+					width: 50px;
+					height: 50px;
+					position: relative;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.main {
+					padding-top: 56.25%;
+				}
+
+				.central {
+					height: 309.22px;
+					width: 570px;
+					position: absolute;
+					display: block;
+				}
 		}
 
-		.bgimg {
-		    background-image: url('Images/construction.jpg');
-		    min-height: 100%;
-		    background-position: center;
-		    background-size: cover;
+		.logo {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+
+		.central {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	</style>
 </head>
 
 <body>
-	<img src="Images/construction.jpg" class="responsive">
+	<img src="Images/logoWideWhite.png" class="logo">
+	<div class="main">
+		<img src="Images/1.png" class="central">
+	</div>
 </body>
 </html>
