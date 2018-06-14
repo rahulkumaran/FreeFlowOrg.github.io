@@ -83,11 +83,11 @@ $(document).ready(function() {
     $("#advi").click(function() {
         $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #tenders").hide();
         $("#advisors").show(1000);
-    }); 
+    });
     $("#ten").click(function() {
         $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors").hide();
         $("#tenders").show(1000);
-    }); 
+    });
   });
 
     $(document).ready(function(){
@@ -96,6 +96,7 @@ $(document).ready(function() {
           $("#navg").css("background-color", "#000");
           $(".navbar-right li a").css("color", "white");
           $(".navbar-right li a").css("font-weight", "500");
+          $("#topImage").attr("src", "img/logoWideWhite.png");
            // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
         } else {
           $("#navg").css("background-color", "transparent");
@@ -103,6 +104,7 @@ $(document).ready(function() {
           $(".navbar-right li a").css("font-weight", "500");
           $("#backhome").css("border-bottom", "2px solid black");
          $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+         $("#topImage").attr("src", "img/logoWideBlack.png");
            // if not, change it back to transparent
         }
       });
@@ -197,7 +199,7 @@ $(document).ready(function() {
           itemsMobile : [479,1],
       });
     });
-    
+
 
     /* Back to Top
     -----------------------------------------------*/
@@ -207,7 +209,7 @@ $(document).ready(function() {
             } else {
                 $('.go-top').fadeOut(200);
            }
-        });   
+        });
           // Animate the scroll to top
         $('.go-top').click(function(event) {
           event.preventDefault();
@@ -220,4 +222,3 @@ $(document).ready(function() {
   new WOW({ mobile: false }).init();
 
   });
-
